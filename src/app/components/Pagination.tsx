@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function Button2({ content, onClick, active, disabled }) {
@@ -87,17 +87,15 @@ function PaginationNav1({
   );
 }
 
-function PaginationNav1Presentation() {
-  const [pageIndex, setPageIndex] = useState(0);
-  const pageCount = 10;
+function PaginationNav1Presentation(props: any) {
   return (
     <div className="flex gap-3 flex-wrap p-6 py-12 justify-center">
       <PaginationNav1
-        gotoPage={setPageIndex}
-        canPreviousPage={pageIndex > 0}
-        canNextPage={pageIndex < pageCount - 1}
-        pageCount={pageCount}
-        pageIndex={pageIndex}
+        gotoPage={props.setPageIndex}
+        canPreviousPage={props.pageIndex > 0}
+        canNextPage={props.ageIndex < props.pageCount - 1}
+        pageCount={props.pageCount}
+        pageIndex={props.pageIndex}
       />
     </div>
   );

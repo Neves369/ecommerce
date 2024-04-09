@@ -68,7 +68,7 @@ const Cart = () => {
           </div>
         )}
 
-        <div className="product-container">
+        <div className="product-container pb-20">
           {cartItems.length >= 1 &&
             cartItems.map((item) => (
               <div className="product" key={item._id}>
@@ -83,7 +83,7 @@ const Cart = () => {
                   </div>
                   <div className="flex bottom">
                     <div>
-                      <p className="quantity-desc">
+                      <p className="quantity-desc flex flex-row max-w-[150px]">
                         <span
                           className="minus"
                           onClick={() =>
@@ -118,12 +118,12 @@ const Cart = () => {
             ))}
         </div>
         {cartItems.length >= 1 && (
-          <div className="cart-bottom">
-            <div className="total">
-              <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
-            </div>
+          <div className="cart-bottom mt-50">
             <div className="btn-container">
+              <div className="total">
+                <h3>Subtotal:</h3>
+                <h3>${totalPrice}</h3>
+              </div>
               <button type="button" className="btn" onClick={handleCheckout}>
                 Pay with Stripe
               </button>
