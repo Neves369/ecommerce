@@ -7,8 +7,9 @@ import Cart from "./Cart";
 import { useStateContext } from "../context/StateContext";
 
 const links = [
-  { name: "All Products", href: "/All" },
+  { name: "All Products", href: "/all_products" },
   { name: "Categories", href: "/Categories" },
+  { name: "SigIn", href: "/SigIn" },
 ];
 
 const Navbar = () => {

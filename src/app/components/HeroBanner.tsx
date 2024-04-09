@@ -5,7 +5,6 @@ import { urlFor } from "../lib/sanity";
 import { motion } from "framer-motion";
 
 const HeroBanner = ({ heroBanner }: any) => {
-  console.log(heroBanner);
   return (
     <div className="hero-banner-container">
       <div>

@@ -45,7 +45,7 @@ width: 100%;
 }
 .marquee {
   position: relative;
-  height: 400px;
+  height: 330px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -539,16 +539,19 @@ padding: 6px;
   cursor: pointer;
 }
 .quantity-desc .minus{
+  display: flex;
   border-right: 1px solid gray;
   color: #f02d34;
+  align-items: center;
 }
 .quantity-desc .num{
   border-right: 1px solid gray;
   font-size: 20px;
 }
 .quantity-desc .plus{
+  display: flex;
   color: rgb(49, 168, 49);
-
+  align-items: center;
 }
 
 .maylike-products-wrapper{
