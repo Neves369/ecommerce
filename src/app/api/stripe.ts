@@ -33,8 +33,8 @@ export default async function handler(req, res) {
         payment_method_types: ['card'],
         billing_address_collection: 'auto',
         line_items: items,
-        success_url: `${"http://localhost:3000"}/success`,
-        cancel_url: `${"http://localhost:3000/"}`,
+        success_url: `${"https://ecommerce-k3a9.vercel.app"}/success`,
+        cancel_url: `${"https://ecommerce-k3a9.vercel.app/"}`,
       }
 
       // Create Checkout Sessions from body params.
