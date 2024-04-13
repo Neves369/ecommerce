@@ -1,5 +1,5 @@
-// @ts-nocheck
 "use client";
+// @ts-nocheck
 import React, { useEffect, useState } from "react";
 
 import { client } from "../lib/sanity";
