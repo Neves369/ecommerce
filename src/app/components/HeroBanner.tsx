@@ -53,15 +53,6 @@ const HeroBanner = ({ heroBanner }: any) => {
               {heroBanner.buttonText}
             </motion.button>
           </Link>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="desc"
-          >
-            <h5>Description</h5>
-            <p>{heroBanner.desc}</p>
-          </motion.div>
         </div>
       </div>
     </div>
