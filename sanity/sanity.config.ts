@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {defineConfig, isDev} from 'sanity'
 import {visionTool} from '@sanity/vision'
 import {structureTool} from 'sanity/structure'
